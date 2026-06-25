@@ -1,26 +1,23 @@
 <div align="center">
+  <h1>🏥 MedSync - Medical Management System</h1>
 
-# 🏥 MedSync - Medical Management System
+  <p align="center">
+    <img src="https://img.shields.io/badge/PLATFORM-ANDROID-3DDC84?style=for-the-badge" alt="Platform">
+    <img src="https://img.shields.io/badge/LANGUAGE-JAVA-ED8B00?style=for-the-badge" alt="Language">
+    <img src="https://img.shields.io/badge/BACKEND-FIREBASE-FFCA28?style=for-the-badge" alt="Backend">
+    <img src="https://img.shields.io/badge/MIN_SDK-23-007ACC?style=for-the-badge" alt="Min SDK">
+    <img src="https://img.shields.io/badge/TARGET_SDK-36-4CAF50?style=for-the-badge" alt="Target SDK">
+  </p>
 
-![Android](https://img.shields.io/badge/Android-API%2024+-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Java](https://img.shields.io/badge/Java-11-orange?style=for-the-badge&logo=openjdk&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Realtime%20DB-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-
-<br/>
-
-**A dual-role healthcare platform connecting patients and doctors — built with Firebase, crafted for Android.**
-
+  <h3>A role-based Android application for managing clinic appointments, patient histories, and medical billing — powered by Firebase.</h3>
+  
+  <i>Submitted for CS-512 Mobile App Development<br>
+  University of Agriculture, Faisalabad<br>
+  Instructor: Prof. Waseem</i>
 </div>
 
----
-
-## 📖 Overview
-
-**MedSync** is a native Android healthcare management application built around a **dual-role architecture**, giving **Patients** and **Doctors** dedicated portals within a single, unified experience. Powered by **Firebase Authentication** and **Firebase Realtime Database**, the app enables real-time appointment booking, clinical record management, and automated billing — keeping every interaction synchronized across both roles from the cloud.
-
-Developed and submitted as an academic project for **CS-512 Mobile App Development** at the **University of Agriculture, Faisalabad**, MedSync demonstrates production-grade mobile patterns including role-based routing, secure authentication, Material Design UI, and live data persistence — bridging everyday healthcare workflows into a polished, mobile-first experience.
-
----
+<br>
+<hr>
 
 ## ✨ Core Features
 
@@ -37,13 +34,13 @@ Developed and submitted as an academic project for **CS-512 Mobile App Developme
 - 🏠 **Dashboard** — Central hub with profile, specialization, and navigation shortcuts
 - ⏳ **Manage Pending Appointments** — Review incoming patient booking requests in real time
 - ✅ **Accept / Reject Appointments** — Approve or decline scheduled visits with one tap
-- 📚 **Clinical Records** — Record diagnosis, prescription, and treatment progress per visit
+- 🩺 **Clinical Records** — Record diagnosis, prescription, and treatment progress per visit
 - 💰 **Automated Billing** — Generate itemized bills with consultation and medicine fees
 
 ### 🔐 Security Features
 
-- 🔑 **Firebase Auth** — Industry-standard email/password authentication with secure session management
-- 🎭 **Role-Based Routing** — Post-login navigation driven by user role (`patient` or `doctor`) stored in Firebase
+- 🔑 **Firebase Authentication** — Industry-standard email/password auth with secure session management
+- 🎭 **Role-Based Routing** — Post-login navigation driven by user role (`patient` or `doctor`)
 
 ---
 
@@ -115,7 +112,7 @@ graph TD
 - XML layouts · Material Design Components · CardView · RecyclerView · ConstraintLayout
 
 **Backend**
-- Firebase Authentication (Email/Password) · Firebase Realtime Database with live data listeners
+- Firebase Authentication (Email/Password) · Firebase Realtime Database
 
 **Language**
 - Java 11
@@ -130,8 +127,8 @@ graph TD
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/aliza-dev/MedSync-Android.git
-cd MedSync-Android
+git clone https://github.com/YOUR_USERNAME/MedicalManagementSystem.git
+cd MedicalManagementSystem
 ```
 
 **2. Configure Firebase**
@@ -156,17 +153,15 @@ Open the project in **Android Studio**, connect a device or launch an emulator, 
 
 ## ⚠️ Production Checklist
 
-Before deploying or submitting for evaluation, complete the following:
-
-- [ ] **Secure Setup Directory** — Verify `google-services.json` is in `app/` and excluded from public repos if needed
-- [ ] **Update Firebase Rules** — Lock down Realtime Database read/write rules for production environments
-- [ ] **Test All User Workflows** — Validate patient registration, doctor flows, appointment lifecycle, and billing end-to-end
+- [ ] **Secure Setup Directory** — Confirm `google-services.json` is in `app/` and excluded from version control
+- [ ] **Update Firebase Rules** — Apply authenticated, role-aware security rules in the Realtime Database
+- [ ] **Test All User Workflows** — Verify Patient and Doctor registration, booking, treatment, and billing flows end-to-end
 
 ---
 
 ## 🎯 Learning Outcomes
 
-Through building **MedSync**, the following core mobile development competencies were demonstrated:
+Through building **MedSync**, the following academic competencies were demonstrated:
 
 - 🔥 **Firebase Integration** — End-to-end setup of Authentication and Realtime Database with live data listeners
 - 📋 **RecyclerView & CardView** — Dynamic list rendering for appointments, history, and billing screens
@@ -186,18 +181,14 @@ Through building **MedSync**, the following core mobile development competencies
 
 ## 👨‍💻 Author
 
-**Aliza Tariq**
+> **Aliza Tariq**<br>
+> University of Agriculture, Faisalabad<br>
+> Department of Computer Science<br>
+> Course: CS-512 — Mobile App Development<br>
+> Instructor: Prof. Waseem
 
-University of Agriculture, Faisalabad
+<br>
+<hr>
+<br>
 
----
-
-<div align="center">
-
-**MedSync** · CS-512 Mobile App Development · University of Agriculture, Faisalabad
-
-<br/>
-
-`com.medical.app` · Android · Java · Firebase
-
-</div>
+<p align="center">Made with ❤️ using Android Studio & Firebase</p>
