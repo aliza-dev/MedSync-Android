@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PatientBillsHistoryActivity">
+
+    <TextView
+        android:id="@+id/tvBillsHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:text="@string/bills_history_title"
+        android:textAppearance="@style/TextAppearance.Medical.Title"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/lvBillsHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/list_item_history_card" />
+
+</LinearLayout>

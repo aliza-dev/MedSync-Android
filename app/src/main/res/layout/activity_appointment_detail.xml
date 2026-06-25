@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Centered bill generation and history update form inside rounded card -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:fillViewport="true"
+    tools:context=".AppointmentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/appointment_detail_title"
+            android:textAppearance="@style/TextAppearance.Medical.Title"
+            android:textSize="24sp" />
+
+        <!-- Patient details card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.Medical.Card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_details_label"
+                android:textAppearance="@style/TextAppearance.Medical.Label" />
+
+            <TextView
+                android:id="@+id/tvPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.Medical.Body"
+                tools:text="Name: John Doe" />
+
+            <TextView
+                android:id="@+id/tvPatientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.Medical.Body"
+                tools:text="Email: john@example.com" />
+
+            <TextView
+                android:id="@+id/tvPatientAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.Medical.Body"
+                tools:text="Age: 25" />
+
+            <TextView
+                android:id="@+id/tvPatientDetailsLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAppointmentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textAppearance="@style/TextAppearance.Medical.Body"
+                tools:text="Appointment Date: 30/05/2026" />
+
+        </LinearLayout>
+
+        <!-- Treatment and billing form card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.Medical.Card"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etDisease"
+                style="@style/Widget.Medical.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_disease"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <EditText
+                android:id="@+id/etPrescription"
+                style="@style/Widget.Medical.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/hint_prescription"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <EditText
+                android:id="@+id/etProgress"
+                style="@style/Widget.Medical.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/hint_progress"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <EditText
+                android:id="@+id/etBillAmount"
+                style="@style/Widget.Medical.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/hint_bill_amount"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btnCompleteAppointment"
+                style="@style/Widget.Medical.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/btn_complete_appointment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

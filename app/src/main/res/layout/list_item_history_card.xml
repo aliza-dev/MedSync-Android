@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout root is required for stable ListView + ArrayAdapter binding -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/bg_card"
+    android:elevation="8dp"
+    android:outlineProvider="background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCardHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/history_record_label"
+        android:textColor="@color/soft_teal_primary"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- ArrayAdapter writes row text into @android:id/text1 -->
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/text_dark_grey"
+        android:textSize="15sp"
+        tools:text="Patient: John Doe" />
+
+</LinearLayout>

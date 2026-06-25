@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Required base styles for dot-notation hierarchy -->
+    <style name="Widget" />
+    <style name="Widget.Medical" />
+    <style name="Widget.Medical.Button" />
+    <style name="TextAppearance" />
+    <style name="TextAppearance.Medical" />
+
+    <style name="TextAppearance.Medical.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_dark_grey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextAppearance.Medical.Subtitle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="TextAppearance.Medical.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="TextAppearance.Medical.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_dark_grey</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="Widget.Medical.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="Widget.Medical.Button.Secondary" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/bg_button_secondary</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/soft_teal_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Widget.Medical.Button.Reject" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/bg_button_reject</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/reject_soft</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Widget.Medical.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:textColor">@color/text_dark_grey</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="Widget.Medical.Card">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:padding">22dp</item>
+    </style>
+
+</resources>
