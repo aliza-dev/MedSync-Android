@@ -6,8 +6,6 @@
 ![Java](https://img.shields.io/badge/Java-11-orange?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Realtime%20DB-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-**A dual-role healthcare platform connecting patients and doctors through secure, real-time mobile workflows.**
-
 </div>
 
 ---
@@ -20,36 +18,65 @@ Developed and submitted as an academic project for **Mobile App Development** at
 
 ---
 
-## ✨ Features
+## 🧭 High-Level App Flow
+
+```
+Launch
+├── Role Selection
+│   ├── 👤 Patient
+│   │   ├── Register / Login
+│   │   └── Patient Dashboard
+│   │       ├── 📅 Book Appointments
+│   │       └── 📚 History
+│   │           ├── 💊 Treatment History
+│   │           └── 🧾 Bills History
+│   │
+│   └── 🩺 Doctor
+│       ├── Register / Login
+│       └── Doctor Dashboard
+│           ├── ⏳ Manage Pending Requests
+│           ├── ✅ Today's Appointments
+│           │   └── Accept / Reject Visits
+│           └── 📝 Treatment & Billing
+│               ├── Diagnosis & Prescription
+│               ├── Progress Updates
+│               └── 💰 Medical Bill Generation
+```
+
+**Simplified journey:**
+
+```
+Launch → Role Selection
+         ├── Patient → Register/Login → Dashboard → Book Appointments / History
+         └── Doctor  → Register/Login → Dashboard → Manage Requests / Today's Appointments → Treatment & Billing
+```
+
+---
+
+## ✨ Core Features
 
 ### 👤 Patient Portal
 
-| Feature | Description |
-|---------|-------------|
-| 🔐 **Secure Registration & Login** | Email/password sign-up and sign-in powered by Firebase Authentication |
-| 👤 **Profile Management** | View personal details — name, email, and age — from a dedicated dashboard |
-| 📅 **Appointment Booking** | Schedule visits with doctor name, **date/time picker**, and problem description |
-| 🧾 **Bills History** | Review medical bills generated from completed appointments |
-| 💊 **Treatment History** | Access diagnosis, prescription, and progress records in one place |
+- 🔐 **Secure Registration & Login** — Email/password sign-up and sign-in powered by Firebase Authentication
+- 👤 **Profile Management** — View personal details (name, email, age) from a dedicated dashboard
+- 📅 **Appointment Booking** — Schedule visits with doctor name, date/time picker, and problem description
+- 💊 **Treatment History** — Access diagnosis, prescription, and progress records in one place
+- 🧾 **Bills History** — Review medical bills generated from completed appointments
 
 ### 🩺 Doctor Portal
 
-| Feature | Description |
-|---------|-------------|
-| 🏠 **Doctor Dashboard** | Central hub displaying profile, specialization, and quick navigation |
-| ⏳ **Manage Pending Appointments** | Review incoming patient booking requests in real time |
-| ✅ **Accept / Reject Appointments** | Approve or decline today's scheduled visits with one tap |
-| 📝 **Diagnosis, Prescription & Progress** | Record clinical findings and treatment updates per appointment |
-| 💰 **Generate Medical Bills** | Create itemized bills covering consultation and medicine fees |
-| 📚 **Patient Medical History** | Browse completed treatment records across all patients |
+- 🏠 **Doctor Dashboard** — Central hub displaying profile, specialization, and quick navigation
+- ⏳ **Manage Pending Appointments** — Review incoming patient booking requests in real time
+- ✅ **Accept / Reject Appointments** — Approve or decline today's scheduled visits with one tap
+- 📝 **Diagnosis, Prescription & Progress** — Record clinical findings and treatment updates per appointment
+- 💰 **Generate Medical Bills** — Create itemized bills covering consultation and medicine fees
+- 📚 **Patient Medical History** — Browse completed treatment records across all patients
 
 ### 🔐 Security Features
 
-| Feature | Description |
-|---------|-------------|
-| 🔑 **Firebase Authentication** | Industry-standard email/password auth with secure session management |
-| 🎭 **Role-Based Routing** | Post-login navigation driven by user role (`patient` or `doctor`) |
-| 🛡️ **Secure Realtime Database Rules** | Read/write access restricted to authenticated users with role-aware policies |
+- 🔑 **Firebase Authentication** — Industry-standard email/password auth with secure session management
+- 🎭 **Role-Based Routing** — Post-login navigation driven by user role (`patient` or `doctor`)
+- 🛡️ **Secure Realtime Database Rules** — Read/write access restricted to authenticated users with role-aware policies
 
 ---
 
@@ -64,56 +91,44 @@ Developed and submitted as an academic project for **Mobile App Development** at
 
 ## 📸 Visual Showcase
 
-### 👤 Patient Flow
+### Patient Experience
 
 | Role Selection | Patient Registration | Patient Dashboard |
 |:---:|:---:|:---:|
-| <img src="assets/role-selection.jpeg" width="250" alt="Role Selection"/> | <img src="assets/patient-register.jpeg" width="250" alt="Patient Registration"/> | <img src="assets/patient-dashboard.jpeg" width="250" alt="Patient Dashboard"/> |
+| <img src="assets/role-selection.jpeg" width="250"> | <img src="assets/patient-register.jpeg" width="250"> | <img src="assets/patient-dashboard.jpeg" width="250"> |
 
-| Treatment History | Bills History | |
+### Doctor Workflow
+
+| Doctor Registration | Doctor Dashboard | Appointment Action |
 |:---:|:---:|:---:|
-| <img src="assets/treatment-history.jpeg" width="250" alt="Treatment History"/> | <img src="assets/bills-history.jpeg" width="250" alt="Bills History"/> | |
+| <img src="assets/doctor-register.jpeg" width="250"> | <img src="assets/doctor-dashboard.jpeg" width="250"> | <img src="assets/appointment-action.jpeg" width="250"> |
 
-### 🩺 Doctor Flow
-
-| Doctor Registration | Doctor Dashboard | Pending Appointments |
+| Today's Appointments | Treatment & Billing | |
 |:---:|:---:|:---:|
-| <img src="assets/doctor-register.jpeg" width="250" alt="Doctor Registration"/> | <img src="assets/doctor-dashboard.jpeg" width="250" alt="Doctor Dashboard"/> | <img src="assets/pending-appointments.jpeg" width="250" alt="Pending Appointments"/> |
-
-| Appointment Action | Today's Appointments | Treatment & Billing Entry |
-|:---:|:---:|:---:|
-| <img src="assets/appointment-action.jpeg" width="250" alt="Appointment Action"/> | <img src="assets/todays-appointments.jpeg" width="250" alt="Today's Appointments"/> | <img src="assets/treatment-billing-detail.jpeg" width="250" alt="Treatment & Billing Entry"/> |
-
-| Patient History | | |
-|:---:|:---:|:---:|
-| <img src="assets/patient-history.jpeg" width="250" alt="Patient History"/> | | |
+| <img src="assets/todays-appointments.jpeg" width="250"> | <img src="assets/treatment-billing-detail.jpeg" width="250"> | |
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technologies |
-|-------|-------------|
-| 🎨 **Frontend** | XML · Material Design Components · CardView · RecyclerView |
-| 🔑 **Backend** | Firebase Authentication (Email/Password) |
-| 🗄️ **Database** | Firebase Realtime Database |
-| 🔧 **Tools** | Android Studio · Gradle · Google Services Plugin |
-| 💻 **Language** | Java 11 |
+**Frontend**
+- XML layouts with Material Design Components
+- CardView & RecyclerView for dynamic list screens
+- ConstraintLayout for responsive screen composition
+
+**Backend**
+- Firebase Authentication (Email/Password)
+
+**Database**
+- Firebase Realtime Database with live data listeners
+
+**Tools**
+- Android Studio · Gradle · Google Services Plugin
+- Java 11 · Min SDK 24 · Target SDK 36
 
 ---
 
 ## 🚀 Quick Start
-
-### 📋 Prerequisites
-
-| Requirement | Details |
-|-------------|---------|
-| 🤖 **Android Studio** | Latest stable version (Hedgehog or newer recommended) |
-| ☕ **JDK** | Version 11 or higher |
-| 🔥 **Firebase Account** | With **Authentication** and **Realtime Database** enabled |
-| 📱 **Device / Emulator** | API Level 24 (Android 7.0) or above |
-
-### ⚙️ Setup
 
 **1. Clone the repository**
 
@@ -138,7 +153,7 @@ cd MedicalManagementSystem
 
 Open the project in **Android Studio**, connect a device or launch an emulator, and click **Run ▶**.
 
-> ⚠️ **Important:** Make sure to add your `google-services.json` file inside the `app/` directory before building the project in Android Studio.
+> ⚠️ **Important:** Add your `google-services.json` file inside the `app/` directory before building the project in Android Studio.
 
 ---
 
@@ -156,12 +171,10 @@ Through building **MedSync**, the following core mobile development competencies
 
 ## 🔮 Future Enhancements
 
-| Enhancement | Description |
-|-------------|-------------|
-| 📹 **Video Consultations** | In-app telemedicine sessions between patients and doctors |
-| 🔔 **Push Notifications** | Appointment reminders, accept/reject alerts, and bill confirmations via FCM |
-| 📄 **PDF Bill Generation** | Export and share itemized medical bills as downloadable PDF documents |
-| 💬 **In-App Messaging** | Secure chat channel for pre- and post-appointment communication |
+- 📄 **PDF Bill Generation** — Export and share itemized medical bills as downloadable PDF documents
+- 🔔 **Push Notifications** — Appointment reminders, accept/reject alerts, and bill confirmations via FCM
+- 📹 **Video Consultations** — In-app telemedicine sessions between patients and doctors
+- 💬 **In-App Messaging** — Secure chat channel for pre- and post-appointment communication
 
 ---
 
